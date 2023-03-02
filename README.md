@@ -1,4 +1,4 @@
-### Venture Funding, DeepLearning Model
+# Venture Funding, DeepLearning Model
 
 The following is a Deep Learning model that aims to predicts whether funding applicants will become successful based on specific features.  
 #### Data
@@ -44,40 +44,40 @@ The numerical and encoded data were combined to create a numerical dataframe for
 
 A two layer deep neural network model using `relu` acivation function for both layers was created.  The ouput layer activation function `sigmoid` was used for binary output.  
 
-![Oringal Deep Learning Model]()
+![Oringal Deep Learning Model](https://github.com/KSohi-max/Venture_Fund_DeepLearning/blob/main/Images/Original_DL_Model.png)
 
 The model was compiled and fitted using `binary_crossentropy` loss function and optimized using `adam` optimizer.  The model was evaluated on `accuracy`.  The model was fitted using 50 epoches and the training data.
 
-![Model Accuracy]()
+![Model Accuracy](https://github.com/KSohi-max/Venture_Fund_DeepLearning/blob/main/Images/Original_DL_Model%20Accuracy.png)
 
 The model achieved a 0.7289795875549316 accuracy.
-The model results and weights were saved under [`conAlphabetSoup.h5`](). 
+The model results and weights were saved under [`conAlphabetSoup.h5`](https://github.com/KSohi-max/Venture_Fund_DeepLearning/blob/main/conAlphabetSoup.h5). 
 
 #### Binary Classification Model_A1
 
 In the second model, the number of neurons were increase, a third hidden layer was added.  Also the activation function of all hidden layers were changed to `LeadyRelu` (note the additional layer required to use LeakyRelu activation function). The ouput layer activation function remain as `sigmoid`. 
 
-![Deep Learning Model_A1]()
+![Deep Learning Model_A1](https://github.com/KSohi-max/Venture_Fund_DeepLearning/blob/main/Images/DL_Model_A1.png)
 
 The model A1 was also compiled and fitted using `binary_crossentropy` loss function and optimized using `adam` optimizer.  The model was evaluated on `accuracy`.  The model was fitted using 50 epoches and the training data.
 
-![Model_A1 Accuracy]()
+![Model_A1 Accuracy](https://github.com/KSohi-max/Venture_Fund_DeepLearning/blob/main/Images/DL_Model_A1%20Acurracy.png)
 
 Model_A1 achieved an accuracy of approximately 0.7301457524299622. 
-The model results and weights were saved under [`AlphabetSoup_A1.h5`](). 
+The model results and weights were saved under [`AlphabetSoup_A1.h5`](https://github.com/KSohi-max/Venture_Fund_DeepLearning/blob/main/AlphabetSoup_A1.h5). 
 
 #### Binary Classification Model_A2
 
 In the third and final model, the number of neurons in hidden layer were the same as Model_A1 (i.e. increased compared to Orginal Model), the number of hidden layers was decreased back to two layers, similar to the Original Model.  But the activation functions were changed to `Softmax` for the hidden layers and for ouput layer to `tanh`.
 
-![Deep Learning Model_A2]()
+![Deep Learning Model_A2](https://github.com/KSohi-max/Venture_Fund_DeepLearning/blob/main/Images/DL_Model_A2.png)
 
 The model A2 was also compiled and fitted using `binary_crossentropy` loss function and optimized using `adam` optimizer.  The model was evaluated on `accuracy`.  The model was fitted using 100 epoches, increased number of iterations, and the training data.
 
-![Model_A2 Accuracy]()
+![Model_A2 Accuracy](https://github.com/KSohi-max/Venture_Fund_DeepLearning/blob/main/Images/DL_Model_A2%20Acurracy.png)
 
 Model_A1 achieved an accuracy of approximately 0.7297959327697754. 
-The model results and weights were saved under [`AlphabetSoup_A2.h5`]().
+The model results and weights were saved under [`AlphabetSoup_A2.h5`](https://github.com/KSohi-max/Venture_Fund_DeepLearning/blob/main/AlphabetSoup_A2.h5).
 
 #### Discussion
 
